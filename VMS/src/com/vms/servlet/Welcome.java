@@ -39,7 +39,7 @@ public class Welcome extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        out.println("Welcome user");
+        out.println("1");
 	}
 
 }

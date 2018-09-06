@@ -7,7 +7,7 @@ import javax.ws.rs.core.MediaType;
 	@Path("/hellorest")
 public class Rest {
 	@GET
-	@Produces(MediaType.TEXT_XML)
+	@Produces(MediaType.TEXT_PLAIN)
 	public String sayHelloXML() {
 		System.out.println("in XML");
 		String response="<?xml version='1.0'?>"+
