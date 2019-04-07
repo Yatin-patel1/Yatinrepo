@@ -17,9 +17,9 @@ public class Registrationdao{
          Class.forName("com.mysql.jdbc.Driver");
       
  	 //creating connection with the database 
-         Connection con= DriverManager.getConnection("jdbc:mysql://enteprisevms.cnxhkbauy6wb.us-east-2.rds.amazonaws.com:3306/vms","vms","Vendor123");
+         Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/aslan","root","Root123!");
          PreparedStatement ps =con.prepareStatement
-                             ("select * from Login where username=? and password=?");
+                             ("select * from login where username=? and password=?");
          ps.setString(1, loginname);
          ps.setString(2, loginpwd);
          ResultSet rs =ps.executeQuery();

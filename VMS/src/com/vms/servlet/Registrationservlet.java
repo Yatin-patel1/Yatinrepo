@@ -45,9 +45,7 @@ public class Registrationservlet extends HttpServlet {
 		String username= request.getParameter("uname");
 		String password= request.getParameter("pwd");
 		String email =request.getParameter("email");
-		System.out.println("Username:"+username);
-		System.out.println("Password:"+password);
-		System.out.println("Email:"+email);
+		
 		String loginname = request.getParameter("loginname");
         String loginpwd = request.getParameter("loginpwd");
         
@@ -58,8 +56,8 @@ public class Registrationservlet extends HttpServlet {
         }
         else
         {
-           System.out.println("Username or Password incorrect");
-           RequestDispatcher rs = request.getRequestDispatcher("Username or Password incorrect");
+           System.out.println("User may not exist!");
+           RequestDispatcher rs = request.getRequestDispatcher("");
            rs.include(request, response);
         }
 		PrintWriter writer  = response.getWriter();

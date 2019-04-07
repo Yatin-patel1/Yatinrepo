@@ -1,135 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
-<title>www.bookstore.com</title>
+    <title>www.bookstore.com</title>
 
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-	crossorigin="anonymous" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+"
+        crossorigin="anonymous" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css"
+        integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous" />
 
 
-<!-- Custom styles for this template -->
-<link href="../css/style.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="icon" href="../image/b.jpg" />
 
 </head>
 
 <body>
 
-	<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Project name</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarsExample06" aria-controls="navbarsExample06"
-			aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+    <div class="page-top" style="width: 100%; height: 20px; background-color: #f46b42;"></div>
 
-		<div class="collapse navbar-collapse" id="navbarsExample06">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="#">Home<span
-						class="sr-only">(current)</span></a></li>
-				<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-				<li class="nav-item dropdown"><a
-					class="nav-link dropdown-toggle" href="#" id="navbardrop"
-					data-toggle="dropdown"> Dropdown </a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Link 1</a> <a
-							class="dropdown-item" href="#">Link 2</a> <a
-							class="dropdown-item" href="#">Link 3</a>
-					</div></li>
-			</ul>
-			<ul class="navbar-nav">
-				<li class="nav-item"><a href="#" class="nav-link">Default</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Fixed top</a>
-				</li>
-				<li class="nav-item"><a href="#" class="nav-link">Static
-						top</a></li>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
 
-			</ul>
-		</div>
-	</nav>
+                <a class="navbar-brand" href="#">Bookstore</a>
+            </div>
+            <div id="navbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">BOOKS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Browse the bookshelf</a></li>
+                            <li><a href="#">Store hours &#38; Directions</a></li>
+                            <li><a href="#">FAQ</a></li>
 
+                        </ul>
+                    </li>
+                    <form class="navbar-form">
 
-	<!-- Carousel -->
+                        <input type="text" name="keyword" class="form-control" placeholder="Book Title" />
 
-	<div class="container box">
-		<div class="row">
-			<div class="col-xs-5">
-				<div id="myCarousel"
-					class="carousel slide bg-inverse w-50 ml-auto mr-auto"
-					data-ride="carousel">
-					<div class="carousel-inner" role="listbox">
-						<div class="carousel-item active">
-							<img class="d-block w-100"
-								src="http://lorempixel.com/output/sports-q-c-1600-900-1.jpg"
-								alt="First slide">
-							<div class="carousel-caption">
-								<h4>First Thumbnail</h4>
-								<p>Contrary to popular belief, Lorem Ipsum is not simply
-									random text. It has roots in a piece of classical Latin
-									literature from 45 BC, making it over 2000 years old.</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img class="d-block w-100"
-								src="http://lorempixel.com/output/sports-q-c-1600-900-2.jpg"
-								alt="Second slide">
-							<div class="carousel-caption">
-								<h4>Second Thumbnail</h4>
-								<p>Contrary to popular belief, Lorem Ipsum is not simply
-									random text. It has roots in a piece of classical Latin
-									literature from 45 BC, making it over 2000 years old.</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img class="d-block w-100"
-								src="http://lorempixel.com/output/sports-q-c-1600-900-3.jpg"
-								alt="Third slide">
-							<div class="carousel-caption">
-								<h4>Third Thumbnail</h4>
-								<p>Contrary to popular belief, Lorem Ipsum is not simply
-									random text. It has roots in a piece of classical Latin
-									literature from 45 BC, making it over 2000 years old.</p>
-							</div>
-						</div>
-					</div>
-					<a class="carousel-control-prev" href="#myCarousel" role="button"
-						data-slide="prev"> <span class="carousel-control-prev-icon"
-						aria-hidden="true"></span> <span class="sr-only">Previous</span>
-					</a> <a class="carousel-control-next" href="#myCarousel" role="button"
-						data-slide="next"> <span class="carousel-control-next-icon"
-						aria-hidden="true"></span> <span class="sr-only">Next</span>
-					</a>
-				</div>
-
-			</div>
-
-			<div class="col-xs-4"></div>
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </form>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+                    <li><a href="../navbar-static-top/">Static top</a></li>
+                    <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+    </nav>
 
 
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <!-- carousel -->
+            <div class="col-xs-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="http://lorempixel.com/output/sports-q-c-1600-500-1.jpg" alt="..." />
+                                    <div class="carousel-caption">
+                                        <h4>First Thumbnail Label</h4>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply
+                                            random text. It has roots in a piece of classical Latin
+                                            literature from 45 BC, making it over 2000 years old.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="http://lorempixel.com/output/sports-q-c-1600-500-2.jpg" alt="..." />
+                                    <div class="carousel-caption">
+                                        <h4>First Thumbnail Label</h4>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply
+                                            random text. It has roots in a piece of classical Latin
+                                            literature from 45 BC, making it over 2000 years old.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="http://lorempixel.com/output/sports-q-c-1600-500-3.jpg" alt="..." />
+                                    <div class="carousel-caption">
+                                        <h4>First Thumbnail Label</h4>
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply
+                                            random text. It has roots in a piece of classical Latin
+                                            literature from 45 BC, making it over 2000 years old.</p>
+                                    </div>
+                                </div>
+                                ...
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a> <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                                data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4">
+                <img src="/image/bookshop.jpg" class="img-responsive" />
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="/image/bestseller.png" class="img-responsive" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="/image/hours.png" class="img-responsive" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="/image/faq.png" class="img-responsive" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div>
+        <div class="home-headline">
+            <span>Featured Books</span>
+        </div>
+        <hr style="margin-top: -15px;" />
+    </div>
+
+
+    <div class="row">
+        <div id="featured-books" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#featured-books" data-slide-to="0" class="active"></li>
+                <li data-target="#featured-books" data-slide-to="1"></li>
+                <li data-target="#featured-books" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/aws.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/book1.png" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/oca.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/aws.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/india.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/joy.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/oca.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/aws.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/india.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/joy.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/book1.png" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/oca.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/aws.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/india.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/joy.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/book1.png" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/oca.jpg" />
+                        </div>
+                        <div class="col-xs-2">
+                            <img class="img-responsive" src="/image/aws.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="##featured-books" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+                    aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a> <a class="right carousel-control" href="##featured-books" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"
+                    aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    </div>
 
 
 
 
 
 
-	<!-- Bootstrap core JavaScript
+
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-		crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -8,9 +8,9 @@ public class Registrationdb {
 	public Connection dBConnection() {
 		Connection connection = null;
 		String DRIVER = "com.mysql.jdbc.Driver";
-		String URL = "jdbc:mysql://enteprisevms.cnxhkbauy6wb.us-east-2.rds.amazonaws.com:3306/vms";
-		String USER = "vms";
-		String PASSWORD = "Vendor123";
+		String URL = "jdbc:mysql://localhost:3306/aslan";
+		String USER = "root";
+		String PASSWORD = "Root123!";
 		try {
 			Class.forName(DRIVER);
 			connection=DriverManager.getConnection(URL,USER,PASSWORD);
