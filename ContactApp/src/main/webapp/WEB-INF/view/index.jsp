@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : May 1, 2017, 3:59:52 PM
-    Author     : Vikram
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="f" %>

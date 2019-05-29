@@ -1,1 +1,1 @@
-<h1>Contact App - Project By Yatin Patel</h1>
+<h1>Project By Yatin Patel</h1>

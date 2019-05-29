@@ -1,9 +1,3 @@
-<%-- 
-    Document   : hello
-    Created on : Apr 24, 2017, 12:46:26 PM
-    Author     : Vikram
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,8 +7,7 @@
     </head>
     <body>
         <h1>
-            Hello World!
-            Welcome to EZEON TECHNOLOGIES <br/>
+            Hello World!<br/>
             Spring MVC is Ready !!!
         </h1>
     </body>
