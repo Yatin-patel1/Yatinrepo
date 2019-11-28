@@ -1,0 +1,18 @@
+  ContactApp is an application to manage and save the records of people contacts into web. This Application helps user to back up their
+contacts into web database so that if anything goes wrong to local contacts they can still login to their portal and get contacts 
+back. I have developed this application using Core java and supporting framework like Spring. This whole application architecture based
+on Spring MVC.
+
+*Functionality of ContactApp.
+1. User can create UserName and Password 
+2. User can save contact like Name, Address, Email, Phone No., etc.
+3. User can Edit, Delete, and Save contacts.
+4. Admin Can Track records of Users list and As per requirement Admin can Active or Block the user.
+
+*Technology Stack
+1. Java
+2. MySql Database
+3. Spring MVC
+4. Putty
+5. Java Script
+6. CSS 
